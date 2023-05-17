@@ -1,0 +1,142 @@
+<!DOCTYP𝔼 html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        Alpine.data('sidebar', () => ({
+          isOpen: false,
+          toggleSidebar() {
+            this.isOpen = !this.isOpen;
+          },
+        }));
+      });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>𝔼ternalOS - Home</title>
+    <style>
+      .sidebar {
+        /* Sidebar styles */
+      }
+
+      .sidebar-icon {
+        transition: transform 0.3s ease;
+      }
+
+      .sidebar-icon.open {
+        transform: rotate(90deg);
+      }
+
+            body {
+              font-family: 'Indie Flower', cursive;
+              font-size: 16px;
+              line-height: 1.5;
+            }
+
+            h1 {ss
+              font-size: 2.5rem;
+              font-weight: bold;
+              margin-bottom: 1.5rem;
+            }
+
+            h2 {
+              font-size: 2rem;
+              font-weight: bold;
+              margin-bottom: 1.5rems;
+            }
+
+            h3 {
+              font-size: 1.5rem;
+              font-weight: bold;
+              margin-bottom: 1rem;
+            }
+
+            p {
+              margin-bottom: 1.5rem;
+            }
+
+            .doodled-text {
+              font-size: 1.125rem;
+              font-weight: normal;
+              line-height: 1.25;
+              color: #718096;
+            }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="bg-gray-800 py-4">
+      <div class="container mx-auto flex flex-col px-4 md:flex-row md:justify-between">
+        <div class="flex items-center">
+          <a href="#" class="text-base text-lg font-bold text-white md:hidden lg:text-lg">𝔼ternalOS</a>
+          <a href="#" class="hidden text-base text-lg font-bold text-white md:block lg:text-lg">𝔼ternalOS</a>
+        </div>
+        <button id="sidebar-toggle" class="text-base text-white md:hidden lg:text-lg">
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+            <path class="sidebar-icon" d="M4 6H20M4 12H20M4 18H20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="md:flex md:space-x-4">
+          <a href="#" class="text-base text-white lg:text-lg">About &#xf406;</a>
+          <a href="#" class="text-base text-white lg:text-lg">Downloads ↓</a>
+          <a href="#" class="text-base text-white lg:text-lg">Features 👨‍💻</a>
+          <a href="#" class="text-base text-white lg:text-lg">Wiki &#x1F4C1;</a>
+          <!-- Add more menu items as needed -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gray-900 py-20">
+      <div class="container mx-auto px-4">
+        <h1 class="mb-8 text-4xl font-bold text-white">Welcome to 𝔼ternalOS</h1>
+        <p class="doodled-text text-lg text-xl text-gray-300 md:text-xl lg:text-2xl">Discover the power and customization of 𝔼ternalOS, the ultimate ROM for your device.</p>
+      </div>
+    </header>
+    <!-- Main Content -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="mb-8 text-3xl font-bold">Features</h2>
+        <ul class="grid grid-cols-1 gap-8 text-lg sm:grid-cols-2 md:text-xl lg:grid-cols-2 lg:text-2xl">
+          <li class="rounded-lg border border-gray-500 p-4">
+            <h3 class="mb-4 text-2xl font-bold">Customization</h3>
+            <p>Personalize your device with a wide range of customization options.</p>
+          </li>
+          <li class="rounded-lg border border-gray-500 p-4">
+            <h3 class="mb-4 text-2xl font-bold">Performance</h3>
+            <p>𝔼xperience enhanced performance and smoothness with 𝔼ternalOS.</p>
+          </li>
+          <li class="rounded-lg border border-gray-500 p-4">
+            <h3 class="mb-4 text-2xl font-bold">Security</h3>
+            <p>Keep your device secure with regular updates and built-in security features.</p>
+          </li>
+          <li class="justify-self-center rounded-lg border border-gray-500 p-4">
+            <h3 class="mb-4 text-2xl font-bold">Reserved Battery</h3>
+            <p>Keep your device last upto one hour on that last 1% battery.</p>
+          </li>
+          <li class="rounded-lg border border-gray-500 p-4">
+            <h3 class="mb-4 text-2xl font-bold">+ And The Top Ones Not Found In Most ROMs</h3>
+            <p>Keep your device at the pinnacle of features with these --></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="mb-8 text-3xl font-bold">Get 𝔼ternalOS Now</h2>
+        <p class="doodled-text mb-8 text-lg text-xl text-gray-600 md:text-xl lg:text-2xl">Download the latest version of 𝔼ternalOS Based on Android 12.1 for your device and unlock a world of possibilities.</p>
+        <a href="#" class="doodled-text inline-block rounded bg-blue-500 px-6 py-3 text-lg font-bold text-white hover:bg-blue-600 md:text-xl lg:text-2xl">Download Now</a>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-4">
+      <div class="container mx-auto px-4">
+        <p class="text-center text-gray-300">© 2023 𝔼ternalOS. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
